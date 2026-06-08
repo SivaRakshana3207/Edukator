@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukator | About</title>
+    
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900 antialiased font-sans">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black/90 lg:bg-black/60 backdrop-blur-md transition-all duration-300 px-6 py-4 lg:px-20 lg:py-6 flex flex-wrap justify-between items-center">
+        <div class="flex items-center text-white">
+            <svg fill="#FF9900" width="35px" height="35px" viewBox="0 -64 640 640" xmlns="http://www.w3.org/2000/svg" stroke="#FF9900">
+                <path d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 32zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"></path>
+            </svg>
+            <h1 class="text-2xl lg:text-3xl font-bold ml-2 tracking-wide">Edukator</h1>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
+        <label for="menu-toggle" class="cursor-pointer lg:hidden block text-white focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </label>
+
+        <ul class="peer-checked:flex hidden lg:flex flex-col lg:flex-row w-full lg:w-auto mt-4 lg:mt-0 items-center justify-center space-y-4 lg:space-y-0 lg:space-x-6 text-sm md:text-base text-white font-medium transition-all duration-300">
+            <li><a href="index.html" class="hover:text-amber-400 transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-amber-400">About</a></li>
+            <li><a href="course.html" class="hover:text-amber-400 transition-colors">Courses</a></li>
+            <li><a href="contact.html" class="hover:text-amber-400 transition-colors">Contact</a></li>
+        </ul>
+
+        <div class="peer-checked:flex hidden lg:flex w-full lg:w-auto mt-4 lg:mt-0 justify-center items-center relative max-w-xs mx-auto lg:mx-0"> 
+            <div class="absolute left-3 text-white">
+                <svg class="w-5 h-5 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+                </svg>
+            </div>
+            <input type="text" placeholder="Search" class="w-full bg-white/10 border border-white/30 pl-10 pr-4 py-1.5 rounded-full text-white placeholder-gray-300 focus:outline-none focus:border-amber-400 text-sm backdrop-blur-sm">
+        </div>
+    </nav>
+
+
+    <!-- About Banner -->
+    <section style="background-image: url('./assets/ab.PNG');" class="relative bg-cover bg-center bg-no-repeat pt-32 pb-20 px-6 sm:px-12 lg:px-24 min-h-[400px] flex items-center bg-gray-900">
+        <div class="absolute inset-0 bg-black/50 z-0"></div>
+
+        <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mt-10"> 
+            <div class="space-y-3 max-w-xl">
+                <h1 class="text-white font-bold text-4xl sm:text-5xl">About Us</h1>
+                <p class="text-gray-200 font-medium text-lg sm:text-xl">Learn Anytime, Anywhere. Accelerate Your Future.</p>
+            </div>
+            <div class="text-white text-sm sm:text-base font-medium bg-black/30 px-4 py-2 rounded-lg backdrop-blur-sm">
+                <span class="text-amber-400">Home</span> <span class="mx-2">>></span> About Us
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Us Intro -->
+    <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 my-16 sm:my-24 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div class="space-y-4">
+            <h3 class="text-red-500 font-bold uppercase tracking-wider text-sm">About Us</h3>
+            <p class="text-2xl sm:text-4xl font-bold text-gray-900 leading-tight">Improving lives through learning. We are always inspired by the world and people around us.</p>
+        </div>
+        <div class="lg:pl-12">
+            <p class="text-gray-600 font-normal text-base sm:text-lg leading-relaxed">Lorem ipsum viverra feugiat. Pellentesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae, fugiat consequatur voluptatem ad.</p>
+        </div>
+    </section>
+
+
+    <!-- Why Choose Us -->
+    <section class="bg-gray-50 py-16 sm:py-24 px-6 sm:px-12 lg:px-24">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Left Content -->
+            <div class="space-y-6">
+                <h3 class="text-red-500 font-bold uppercase tracking-wider text-sm">Why Choose Us</h3>
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">Our Mission is to Provide a World‑class Education</h2>
+                <p class="text-base sm:text-lg text-gray-600 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis eros et, sed commodo risus.</p>
+                <button class="bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-md py-3 px-8 shadow-md hover:shadow-lg transition-all duration-300">Read More</button>
+            </div>
+
+            <!-- Right Content (Grid of Cards) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="p-4 rounded-full bg-amber-100 text-amber-600 mb-4">
+                        <!-- Group Seminars Icon -->
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h4 class="text-gray-900 font-bold text-lg">Group Seminars</h4>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="p-4 rounded-full bg-blue-100 text-blue-600 mb-4">
+                        <!-- Trending Courses Icon -->
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h4 class="text-gray-900 font-bold text-lg">Trending Courses</h4>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="p-4 rounded-full bg-green-100 text-green-600 mb-4">
+                        <!-- Large Library Icon -->
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <h4 class="text-gray-900 font-bold text-lg">Large Library</h4>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="p-4 rounded-full bg-purple-100 text-purple-600 mb-4">
+                        <!-- Expert Teachers Icon -->
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                    </div>
+                    <h4 class="text-gray-900 font-bold text-lg">Expert Teachers</h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Meet our team -->
+    <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 my-16 sm:my-24"> 
+        <div class="text-center space-y-2 mb-16">
+            <h3 class="text-red-700 text-sm font-bold uppercase tracking-wider">Our Team</h3>
+            <h2 class="text-3xl sm:text-4xl text-gray-900 font-bold">Meet Our Teachers</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Team Member 1 -->
+            <div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 text-center">
+                <div class="overflow-hidden bg-gray-100 aspect-[4/5]">
+                    <img src="./assets/team1.jpg" alt="Lawrence Petrie" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-5">
+                    <h4 class="text-lg font-bold text-gray-900">Lawrence Petrie</h4>
+                    <p class="text-gray-500 text-sm mt-1">Director</p>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 text-center">
+                <div class="overflow-hidden bg-gray-100 aspect-[4/5]">
+                    <img src="./assets/team2.jpg" alt="Jack Peters" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-5">
+                    <h4 class="text-lg font-bold text-gray-900">Jack Peters</h4>
+                    <p class="text-gray-500 text-sm mt-1">Managing Director</p>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 text-center">
+                <div class="overflow-hidden bg-gray-100 aspect-[4/5]">
+                    <img src="./assets/team3.jpg" alt="Anna Phillips" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-5">
+                    <h4 class="text-lg font-bold text-gray-900">Anna Phillips</h4>
+                    <p class="text-gray-500 text-sm mt-1">Teacher</p>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 text-center">
+                <div class="overflow-hidden bg-gray-100 aspect-[4/5]">
+                    <img src="./assets/team4.jpg" alt="Roland Walker" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-5">
+                    <h4 class="text-lg font-bold text-gray-900">Roland Walker</h4>
+                    <p class="text-gray-500 text-sm mt-1">Teacher</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Progress Bars Section -->
+<section class="bg-gray-50 mx-auto px-6 sm:px-12 lg:px-24 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+    
+    <!-- Left Content: Progress Bars -->
+    <div class="space-y-6">
+        <!-- Skill 1 -->
+        <div class="space-y-2">
+            <div class="flex justify-between items-end font-bold text-gray-900">
+                <span class="text-base sm:text-lg">Figma illustrations</span>
+                <span class="text-sm sm:text-base">80%</span>
+            </div>
+            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-amber-500 h-1.5 rounded-full" style="width: 80%;"></div>
+            </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="space-y-2">
+            <div class="flex justify-between items-end font-bold text-gray-900">
+                <span class="text-base sm:text-lg">PHP programming</span>
+                <span class="text-sm sm:text-base">95%</span>
+            </div>
+            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-amber-500 h-1.5 rounded-full" style="width: 95%;"></div>
+            </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="space-y-2">
+            <div class="flex justify-between items-end font-bold text-gray-900">
+                <span class="text-base sm:text-lg">Web design & development</span>
+                <span class="text-sm sm:text-base">90%</span>
+            </div>
+            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-amber-500 h-1.5 rounded-full" style="width: 90%;"></div>
+            </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="space-y-2">
+            <div class="flex justify-between items-end font-bold text-gray-900">
+                <span class="text-base sm:text-lg">Adobe Photoshop</span>
+                <span class="text-sm sm:text-base">75%</span>
+            </div>
+            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-amber-500 h-1.5 rounded-full" style="width: 75%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Content: Heading & Description -->
+    <div class="space-y-4">
+        <h3 class="text-red-500 font-bold uppercase tracking-wider text-sm">Progress Bars</h3>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
+            What You Have In Our Popular Online Courses
+        </h2>
+        <p class="text-gray-500 font-normal text-base sm:text-lg leading-relaxed pt-2">
+            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit, culpa! elit ut et.
+        </p>
+    </div>
+
+</section>
+
+    <!-- Join With Us Section -->
+<section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 my-16 sm:my-24 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+    
+    <!-- Left Content: Headings & Text -->
+    <div class="space-y-3 max-w-2xl">
+        <h3 class="text-red-500 font-bold uppercase tracking-wider text-sm">Join With Us</h3>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">
+            Want To Join?
+        </h2>
+        <p class="text-gray-500 font-normal text-base sm:text-lg leading-relaxed pt-1">
+            Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.
+        </p>
+    </div>
+
+    <!-- Right Content: Call to Action Buttons -->
+    <div class="flex flex-wrap sm:flex-nowrap gap-4 items-center shrink-0">
+        <a href="contact.html" class="w-full sm:w-auto text-center bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold rounded-lg py-4 px-8 shadow-sm transition-all duration-300">
+            Became a Teacher
+        </a>
+        <a href="contact.html" class="w-full sm:w-auto text-center bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg py-4 px-8 shadow-sm transition-all duration-300">
+            Contact Now
+        </a>
+    </div>
+
+</section>
+
+<!-- Footer -->
+    <footer class="bg-[#021622] text-gray-300 pt-16 pb-8 px-6 sm:px-12 lg:px-24">
+    <div class="max-w-7xl mx-auto space-y-12">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-8 lg:gap-12">
+            
+            <div class="space-y-6 lg:col-span-4">
+                <h3 class="text-xl font-bold text-white tracking-wide">About</h3>
+                <p class="text-sm leading-relaxed text-gray-400">
+                    Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.voluptatem accusantium doloremque.
+                </p>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/5 hover:bg-[#ff9900] hover:text-black flex items-center justify-center text-sm transition-all duration-300">
+                        <span class="font-bold">f</span>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/5 hover:bg-[#ff9900] hover:text-black flex items-center justify-center text-sm transition-all duration-300">
+                        <span class="font-bold">in</span>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/5 hover:bg-[#ff9900] hover:text-black flex items-center justify-center text-xs transition-all duration-300">
+                        <span class="font-bold">tw</span>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/5 hover:bg-[#ff9900] hover:text-black flex items-center justify-center text-xs transition-all duration-300">
+                        <span class="font-bold text-[10px]">G+</span>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/5 hover:bg-[#ff9900] hover:text-black flex items-center justify-center text-sm transition-all duration-300">
+                        <span class="font-bold">p</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="space-y-6 lg:col-span-2 lg:ml-4">
+                <h3 class="text-xl font-bold text-white tracking-wide">Useful Links</h3>
+                <ul class="space-y-3.5 text-sm">
+                    <li>
+                        <a href="index.html" class="hover:text-[#ff9900] transition-colors flex items-center gap-2 group text-gray-400">
+                            <span class="text-[10px] text-gray-500 group-hover:text-[#ff9900]">&gt;</span> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="hover:text-[#ff9900] transition-colors flex items-center gap-2 group text-gray-400">
+                            <span class="text-[10px] text-gray-500 group-hover:text-[#ff9900]">&gt;</span> About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="course.html" class="hover:text-[#ff9900] transition-colors flex items-center gap-2 group text-gray-400">
+                            <span class="text-[10px] text-gray-500 group-hover:text-[#ff9900]">&gt;</span> Courses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="hover:text-[#ff9900] transition-colors flex items-center gap-2 group text-gray-400">
+                            <span class="text-[10px] text-gray-500 group-hover:text-[#ff9900]">&gt;</span> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="space-y-6 lg:col-span-3">
+                <h3 class="text-xl font-bold text-white tracking-wide">Help & Support</h3>
+                <ul class="space-y-3.5 text-sm">
+                    <li>
+                        <a href="#" class="hover:text-[#ff9900] transition-colors flex items-center gap-2 group text-gray-400">
+                            <span class="text-[10px] text-gray-500 group-hover:text-[#ff9900]">&gt;</span> Live Chart
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-[#ff9900] transition-colors flex items-center gap-2 group text-gray-400">
+                            <span class="text-[10px] text-gray-500 group-hover:text-[#ff9900]">&gt;</span> Faq
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-[#ff9900] transition-colors flex items-center gap-2 group text-gray-400">
+                            <span class="text-[10px] text-gray-500 group-hover:text-[#ff9900]">&gt;</span> Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-[#ff9900] transition-colors flex items-center gap-2 group text-gray-400">
+                            <span class="text-[10px] text-gray-500 group-hover:text-[#ff9900]">&gt;</span> Terms of Services
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="space-y-6 lg:col-span-3">
+                <h3 class="text-xl font-bold text-white tracking-wide">Research</h3>
+                <ul class="space-y-3.5 text-sm">
+                    <li>
+                        <a href="#" class="hover:text-[#ff9900] transition-colors flex items-center gap-2 group text-gray-400">
+                            <span class="text-[10px] text-gray-500 group-hover:text-[#ff9900]">&gt;</span> Academic Divisions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-[#ff9900] transition-colors flex items-center gap-2 group text-gray-400">
+                            <span class="text-[10px] text-gray-500 group-hover:text-[#ff9900]">&gt;</span> Student Research
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-[#ff9900] transition-colors flex items-center gap-2 group text-gray-400">
+                            <span class="text-[10px] text-gray-500 group-hover:text-[#ff9900]">&gt;</span> Centers & Institutes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-[#ff9900] transition-colors flex items-center gap-2 group text-gray-400">
+                            <span class="text-[10px] text-gray-500 group-hover:text-[#ff9900]">&gt;</span> Research Facilities
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="pt-8 border-t border-white/5 text-center text-sm text-gray-400">
+            <p>© 2026 Edukator. All rights reserved. Design by <a href="#" class="hover:text-white transition-colors font-medium">Siva Rakshana</a></p>
+        </div>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
