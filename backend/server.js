@@ -33,6 +33,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.html'));
 });
 
+// 1. ADMISSIONS
 app.post('/api/apply', (req, res) => {
     const { name, email } = req.body;
 
@@ -48,6 +49,25 @@ app.post('/api/apply', (req, res) => {
             return res.status(500).json({ message: 'Database saving error' });
         }
         res.status(200).json({ message: 'Application saved successfully!', id: result.insertId });
+    });
+});
+
+// 2. CONTACT FORM 
+app.post('/api/contact', (req, res) => {
+    const { name, subject, email, phone, message } = req.body;
+
+    if (!name || !email || !phone) {
+        return res.status(400).json({ message: 'Please fill in all required fields (Name, Email, and Phone Number)' });
+    }
+
+    const query = 'INSERT INTO contact (name, subject, email, phone, message) VALUES (?, ?, ?, ?, ?)';
+    
+    db.query(query, [name, subject || null, email, phone, message || null], (err, result) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).json({ message: 'Database saving error' });
+        }
+        res.status(200).json({ message: 'Message sent successfully!', id: result.insertId });
     });
 });
 

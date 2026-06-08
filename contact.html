@@ -128,30 +128,30 @@
     <!-- Contact Form Section -->
     <section class="bg-white py-12 px-6 sm:px-12 lg:px-24">
         <div class="max-w-7xl mx-auto">
-            <form class="space-y-6">
+            <form id="contactForm" class="space-y-6">
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                     <div>
-                        <input type="text" placeholder="Enter your name *" required class="w-full bg-[#F8F8F8] border border-gray-200 rounded px-5 py-4 text-slate-800 placeholder-gray-400 font-light focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300">
+                        <input type="text" name="name" placeholder="Enter your name *" required class="w-full bg-[#F8F8F8] border border-gray-200 rounded px-5 py-4 text-slate-800 placeholder-gray-400 font-light focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300">
                     </div>
 
                     <div>
-                        <input type="text" placeholder="Enter subject" class="w-full bg-[#F8F8F8] border border-gray-200 rounded px-5 py-4 text-slate-800 placeholder-gray-400 font-light focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300">
+                        <input type="text" name="subject" placeholder="Enter subject" class="w-full bg-[#F8F8F8] border border-gray-200 rounded px-5 py-4 text-slate-800 placeholder-gray-400 font-light focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300">
                     </div>
 
                     <div>
-                        <input type="email" placeholder="Enter your email *" required class="w-full bg-[#F8F8F8] border border-gray-200 rounded px-5 py-4 text-slate-800 placeholder-gray-400 font-light focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300">
+                        <input type="email" name="email" placeholder="Enter your email *" required class="w-full bg-[#F8F8F8] border border-gray-200 rounded px-5 py-4 text-slate-800 placeholder-gray-400 font-light focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300">
                     </div>
 
                     <div>
-                        <input type="tel" placeholder="Enter your Phone Number *" required class="w-full bg-[#F8F8F8] border border-gray-200 rounded px-5 py-4 text-slate-800 placeholder-gray-400 font-light focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300">
+                        <input type="tel" name="phone" placeholder="Enter your Phone Number *" required class="w-full bg-[#F8F8F8] border border-gray-200 rounded px-5 py-4 text-slate-800 placeholder-gray-400 font-light focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300">
                     </div>
 
                 </div>
 
                 <div>
-                    <textarea rows="5" placeholder="Type your query here" class="w-full bg-[#F8F8F8] border border-gray-200 rounded px-5 py-4 text-slate-800 placeholder-gray-400 font-light focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300 resize-none"></textarea>
+                    <textarea name="message" rows="5" placeholder="Type your query here" class="w-full bg-[#F8F8F8] border border-gray-200 rounded px-5 py-4 text-slate-800 placeholder-gray-400 font-light focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300 resize-none"></textarea>
                 </div>
 
                 <div class="flex justify-end pt-2">
